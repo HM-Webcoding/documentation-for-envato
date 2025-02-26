@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envato Theme Documentation Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Header -->
+      <header class="header" role="banner">
+        <div class="logo" role="heading" aria-level="1">Envato Marketplace</div>
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
+          <ul>
+            <li><a href="#theme1">Theme 1</a></li>
+            <li><a href="#theme2">Theme 2</a></li>
+            <li><a href="#theme3">Theme 3</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main Container (Sidebar + Main Content) -->
+      <div class="main-container">
+        <!-- Sidebar -->
+        <aside
+          class="sidebar"
+          role="complementary"
+          aria-label="Theme Navigation"
+        >
+          <h2>My Themes</h2>
+          <ul class="theme-list" role="list">
+            <li role="listitem">
+              <a href="#theme1" class="active">Theme 1</a>
+            </li>
+            <li role="listitem"><a href="#theme2">Theme 2</a></li>
+            <li role="listitem"><a href="#theme3">Theme 3</a></li>
+          </ul>
+          <h2>Categories</h2>
+          <ul class="category-list" role="list">
+            <li role="listitem">WordPress</li>
+            <li role="listitem">HTML</li>
+            <li role="listitem">Shopify</li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" role="main">
+          <div class="search-bar">
+            <label for="searchInput" class="visually-hidden"
+              >Search documentation</label
+            >
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search documentation..."
+              aria-label="Search documentation"
+            />
+            <button id="searchButton" aria-label="Search">Search</button>
+          </div>
+
+          <!-- Documentation Sections -->
+          <section
+            id="theme1"
+            class="documentation-section"
+            aria-labelledby="theme1-heading"
+          >
+            <h2 id="theme1-heading">Theme 1 Documentation</h2>
+            <h3>Installation Guide</h3>
+            <p>Follow these steps to install Theme 1:</p>
+            <ol>
+              <li>Download the theme files.</li>
+              <li>Upload the files to your server.</li>
+              <li>Activate the theme in your CMS.</li>
+            </ol>
+            <h3>Customization</h3>
+            <p>Learn how to customize Theme 1 with our detailed guide.</p>
+          </section>
+
+          <section
+            id="theme2"
+            class="documentation-section"
+            aria-labelledby="theme2-heading"
+          >
+            <h2 id="theme2-heading">Theme 2 Documentation</h2>
+            <h3>Getting Started</h3>
+            <p>Welcome to Theme 2! Here's how to get started:</p>
+            <ol>
+              <li>Install the theme.</li>
+              <li>Configure the settings.</li>
+              <li>Start customizing.</li>
+            </ol>
+            <h3>FAQs</h3>
+            <p>Find answers to common questions about Theme 2.</p>
+          </section>
+
+          <section
+            id="theme3"
+            class="documentation-section"
+            aria-labelledby="theme3-heading"
+          >
+            <h2 id="theme3-heading">Theme 3 Documentation</h2>
+            <h3>Introduction</h3>
+            <p>
+              Theme 3 is a versatile and modern theme. Here's how to use it:
+            </p>
+            <ol>
+              <li>Install the theme.</li>
+              <li>Explore the demo content.</li>
+              <li>Customize to fit your needs.</li>
+            </ol>
+            <h3>Support</h3>
+            <p>Contact our support team for assistance with Theme 3.</p>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer" role="contentinfo">
+        <div class="support-links">
+          <a href="#">Support</a>
+          <a href="#">Community Forums</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="legal-info">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
